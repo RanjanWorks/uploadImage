@@ -5,7 +5,7 @@ let bar = document.getElementById("bar");
 let url = document.getElementById("url");
 let cpy = document.getElementById("cpy");
 let cancel = document.getElementById('x')
-let expirationTime
+let expirationTime = '';
 
 imgInput.addEventListener("change", (e) => {
   let i = e.target.files[0];
