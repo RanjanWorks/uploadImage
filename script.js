@@ -69,8 +69,8 @@ document
   text: "somthing went wrong",
   icon: "error"
 });
-   
-          document.body.classList.remove("upload");
+   cancel.click()
+     
         }
       })
       .catch((error) => {
@@ -81,7 +81,7 @@ document
   icon: "error"
 });
    
-              document.body.classList.remove("upload");
+             cancel.click()
 
       });
   });
