@@ -57,13 +57,17 @@ document
           document.body.classList.add("success");
           submitBtn.disabled = true;
     cancel.style.display = 'block'
-
+swal("Uploaded!", "click the copy button to copy imagelink", "success");
         } else {
-          alert("failed");
+         swal("Upload Failed", "somthing went wrong", "error");
+          document.body.classList.remove("upload");
         }
       })
       .catch((error) => {
         console.error("Error:", error);
+         swal("Upload Failed", "somthing went wrong", "error");
+              document.body.classList.remove("upload");
+
       });
   });
 
